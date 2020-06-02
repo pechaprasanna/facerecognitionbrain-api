@@ -14,7 +14,7 @@ const db = knex({
   connection: {
     host : 'postgresql://db:5432/',
     user : 'postgres_username',
-    password : 'postgres_pass',
+    password : 'postgres_password',
     database : 'postgres'
   }
 });
