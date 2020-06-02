@@ -9,10 +9,11 @@ const profile = require('./controllers/profile')
 const image = require('./controllers/image')
 
 
+
 const db = knex({
   client: 'pg',
   connection: {
-    host : `$DB_SERVICE_HOST:$DB_HOST_PORT`,
+    host : `${DB_SERVICE_HOST}`,
     user : 'postgres_username',
     password : 'postgres_password',
     database : 'postgres'
