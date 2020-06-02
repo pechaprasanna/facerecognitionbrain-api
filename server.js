@@ -39,7 +39,9 @@ app.post('/imageurl', (req, res) => { image.handleAPICall(req, res) })
 
 */
 const port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
-app.listen(port, () => {
+const ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+console.log(port, ip_address);
+app.listen(port,ip_address, () => {
 	console.log(process.env)
 	console.log(`App is running on port ${port}`);
 })
