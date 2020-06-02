@@ -38,9 +38,10 @@ app.post('/imageurl', (req, res) => { image.handleAPICall(req, res) })
 });
 
 */
-
-app.listen(process.env.PORT || 3000, () => {
-	console.log(`App is running on port ${process.env.PORT}`);
+const port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+app.listen(port, () => {
+	console.log(process.env)
+	console.log(`App is running on port ${port}`);
 })
 
 /*
