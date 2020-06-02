@@ -11,9 +11,7 @@ const image = require('./controllers/image')
 
 const db = knex({
   client: 'pg',
-  connection: {
-    connectionString: 'postgres://postgres_username:postgres_password@db/postgres'
-  }
+  connection: 'postgres://postgres_username:postgres_password@db/postgres'
 });
 
 app.use(express.json());
