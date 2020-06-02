@@ -12,10 +12,10 @@ const image = require('./controllers/image')
 const db = knex({
   client: 'pg',
   connection: {
-    host : 'DB_SERVICE_PORT',
+    host : 'postgresql://db:5432/',
     user : 'postgres_username',
     password : 'postgres_pass',
-    database : 'myapp_test'
+    database : 'postgres'
   }
 });
 
