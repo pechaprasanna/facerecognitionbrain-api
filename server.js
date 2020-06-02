@@ -8,6 +8,7 @@ const signin = require('./controllers/signin')
 const profile = require('./controllers/profile')
 const image = require('./controllers/image')
 
+console.log(process.env);
 
 const db = knex({
 	client: 'pg',
